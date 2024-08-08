@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .menu-btn, .more-options-btn {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+/* 
+        .forms{
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-left: 30px;
+            width: 90%;
+            height : 300px ; 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        } */
+
+        .forms{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+
+        .form1{
+            grid-template: 1/2;
+            grid-row: 1/2;
+        }
+        
+        .form2{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .form img{
+            height: 400px;
+            width: 250px;
+        }
+        
+        a {
+        display: inline-block; 
+        color: #333;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-btn">☰</button>
+        <img src="./images/form-img.png " height="30px" />
+        <div class="logo">Forms</div>
+        <button><img src="./images/search.png" alt="seachbutton" height="20px"></button>
+        <input type="text" placeholder=" Search" class="search-bar">
+        <button class="more-options-btn">⋮⋮⋮</button>
+        <img src="./images/avatar-user.png" alt="Profile Picture" class="profile-pic">
+      </div>
+
+    <div class="forms">
+        <div class="form form1">
+            <a href="html survey form.html">
+                <img id="surveyform" src="./images/html survey form.webp" alt="HTML SURVEY FORM">
+            </a>
+            <div>
+                HTML SURVEY FORM
+            <div>
+        </div>
+
+        <hr>
+
+        <div class="form form2">
+            <a href="simple contact form.html">
+                <img src="./images/html contact form with attachment and file upload support.webp" alt="HTML CONTACT FORM WITH ATTACHMENT">
+            </a>
+            <div>
+                HTML CONTACT FORM WITH ATTACHMENT
+            <div>
+        </div>
+       
+        <hr>
+
+        <div class="form form3">
+            <a href="contact from.html">
+                <img src="./images/consent form for a website.webp" alt="CONTACT FORM">
+            </a>    
+            <div>
+                CONTACT FORM
+            <div>
+        </div>
+       
+        <hr>
+
+        <div class="form form4">
+            <a href="job appplication.html">
+                <img src="./images/job appliction form.webp" alt="JOB APPLICATION FORM">
+            </a>
+            <div>
+                JOB APPLICATION FORM
+            <div>
+        </div>
+
+        <hr>
+        
+        <div class="form form5">
+            <a href="consent form.html">
+                <img src="./images/consent form for a website.webp" alt="CONSENT FORM">
+            </a>
+            <div>
+                CONSENT FORM
+            <div>
+        </div>
+
+        <hr>
+
+        <div class="form form6">
+            <a href="quiz form for website.html">
+                <img src="./images/quiz form for a website.webp" alt="QUIZ FORM">
+            </a>
+            <div>
+                QUIZ FORM
+            <div>
+        </div>
+
+        <hr>
+
+        <div class="form form7">
+            <a href="newsletter.html">
+                <img src="./images/newsletter subscription form.webp" alt="NEWS LETTER SUBSCRIPTION FORM" >
+            </a>
+            <div>
+                NEWS LETTER SUBSCRIPTION FORM
+            <div>
+        </div>
+
+
+    </div>
+
+    <script>
+        document.getElementById("surveyform").addEventListener("click", function() {
+            window.location.href = "html survey form.html";
+        });
+    </script>
+</body>
+</html>
